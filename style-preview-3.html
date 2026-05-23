@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>风格 3 - 暗黑强烈</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0D0D0D;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .card {
+    background: #1A1A1A;
+    border: 1px solid #2A2A2A;
+    border-radius: 12px;
+    padding: 44px;
+    max-width: 480px;
+    width: 90%;
+  }
+  .label {
+    font-size: 11px;
+    color: #C8A96E;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+  .option {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #AAA;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .option:hover {
+    background: #2A2A2A;
+    border-color: #C8A96E;
+    color: #FFF;
+  }
+  .num {
+    color: #C8A96E;
+    font-size: 12px;
+    font-weight: 700;
+    min-width: 20px;
+  }
+  .progress {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 28px;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #333; }
+  .dot.active { background: #C8A96E; }
+  .style-tag {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 11px;
+    color: #444;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">Question 02 of 05</div>
+  <div class="progress">
+    <div class="dot active"></div>
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <h1>周末你最想做什么？</h1>
+  <div class="option"><span class="num">A</span> 去户外冒险，越刺激越好</div>
+  <div class="option"><span class="num">B</span> 窝在家里看剧喝东西</div>
+  <div class="option"><span class="num">C</span> 约朋友出来玩个痛快</div>
+  <div class="option"><span class="num">D</span> 找家甜品店慢慢享受</div>
+  <div class="style-tag">风格 3 · 暗黑强烈</div>
+</div>
+</body>
+</html>

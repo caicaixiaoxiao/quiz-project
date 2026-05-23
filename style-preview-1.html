@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>风格 1 - 活泼彩色</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(135deg, #FF6B6B, #FFE66D, #4ECDC4);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 480px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  }
+  .label {
+    background: #FF6B6B;
+    color: white;
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+  h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 28px;
+    line-height: 1.4;
+  }
+  .option {
+    background: #FFF9F0;
+    border: 2px solid #FFE0CC;
+    border-radius: 16px;
+    padding: 14px 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #444;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .option:hover { background: #FFE0CC; border-color: #FF6B6B; transform: scale(1.02); }
+  .emoji { font-size: 20px; }
+  .progress {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 28px;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: #FFE66D; }
+  .dot.active { background: #FF6B6B; }
+  .style-tag {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">第 2 题，共 5 题</div>
+  <div class="progress">
+    <div class="dot active"></div>
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <h1>🎯 周末你最想做什么？</h1>
+  <div class="option"><span class="emoji">🏔️</span> 去户外冒险，越刺激越好</div>
+  <div class="option"><span class="emoji">🛋️</span> 窝在家里看剧喝东西</div>
+  <div class="option"><span class="emoji">🎉</span> 约朋友出来玩个痛快</div>
+  <div class="option"><span class="emoji">🍰</span> 找家甜品店慢慢享受</div>
+  <div class="style-tag">风格 1 · 活泼彩色</div>
+</div>
+</body>
+</html>

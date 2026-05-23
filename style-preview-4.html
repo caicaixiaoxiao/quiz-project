@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>风格 4 - 温暖舒适</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(160deg, #FDF6EC, #F5E6D3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Segoe UI', serif;
+  }
+  .card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    padding: 44px;
+    max-width: 480px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(180,130,80,0.12);
+    border: 1px solid rgba(200,160,100,0.2);
+  }
+  .label {
+    font-size: 12px;
+    color: #B8886A;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  h1 {
+    font-size: 21px;
+    color: #5C3D2E;
+    margin-bottom: 28px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  .option {
+    background: linear-gradient(135deg, #FEF9F3, #FDF1E4);
+    border: 1px solid #E8D5BE;
+    border-radius: 14px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #6B4C3B;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .option:hover {
+    background: linear-gradient(135deg, #F5E6D3, #EDD5B8);
+    border-color: #C8966A;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(180,130,80,0.15);
+  }
+  .icon { font-size: 18px; }
+  .progress {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 24px;
+  }
+  .cup { font-size: 14px; }
+  .bar-wrap { flex: 1; height: 4px; background: #EDD5B8; border-radius: 2px; }
+  .bar-fill { height: 100%; width: 40%; background: #C8966A; border-radius: 2px; }
+  .style-tag {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 11px;
+    color: #C8966A;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', sans-serif;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">第 2 题，共 5 题</div>
+  <div class="progress">
+    <span class="cup">☕</span>
+    <div class="bar-wrap"><div class="bar-fill"></div></div>
+  </div>
+  <h1>周末，你最享受的状态是……</h1>
+  <div class="option"><span class="icon">🏕️</span> 去户外冒险，越刺激越好</div>
+  <div class="option"><span class="icon">🧸</span> 窝在家里看剧喝东西</div>
+  <div class="option"><span class="icon">🥂</span> 约朋友出来玩个痛快</div>
+  <div class="option"><span class="icon">🧁</span> 找家甜品店慢慢享受</div>
+  <div class="style-tag">风格 4 · 温暖舒适</div>
+</div>
+</body>
+</html>
